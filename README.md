@@ -7,7 +7,8 @@
 ├── Dockerfile
 ├── site-content/
 │   ├── index.html
-│   └── styles.css
+│   ├── styles.css
+│   └── profile.png
 ├── logs/
 └── README.md
 ```
