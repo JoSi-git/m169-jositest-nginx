@@ -12,7 +12,6 @@
 └── README.md
 ```
 
----
 
 ## Dockerfile (NGINX)
 ```dockerfile
@@ -36,7 +35,6 @@ EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
----
 
 ## Beispielseite (`index.html`)
 Speichere diese Datei unter `site-content/index.html`.
@@ -52,11 +50,11 @@ Speichere diese Datei unter `site-content/index.html`.
 <body>
     <h1>Willkommen auf meiner Webseite!</h1>
     <p>Diese Webseite läuft in einem Docker-Container mit NGINX.</p>
+    <p>JoSi 2025.</p>
 </body>
 </html>
 ```
 
----
 
 ## Beispiel CSS-Datei (`styles.css`)
 Speichere diese Datei unter `site-content/styles.css`.
@@ -72,19 +70,17 @@ h1 {
 }
 ```
 
----
 
 ## Container bauen und starten
 1. Erstelle die benötigten Ordner:
-```bash
-mkdir -p Projektordner/site-content Projektordner/logs
-```
 
-2. Kopiere `index.html` und `styles.css` in den Ordner `site-content/`.
+```
+git clone https://github.com/JoSi-git/m169.git
+```
 
 3. Wechsle in den Projektordner und baue das Docker-Image:
 ```bash
-docker build -t mein-nginx-server .
+docker build -t jositest-nginx .
 ```
 
 4. Starte den Container:
@@ -94,8 +90,6 @@ docker run -d -p 8080:80 \
   -v $(pwd)/logs:/var/log/nginx \
   --name jositest-nginx jositest-nginx
   ```
-
----
 
 ## Aufruf der Webseite
 Im Browser eingeben:
