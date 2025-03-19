@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center; /* Text zentrieren */
 }
 
 .card {
@@ -29,7 +30,7 @@ body {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 3px solid #87cefa; /* Helles Blau als Rand */
+    border: 3px solid #6495ed; /* Helles Blau als Rand */
     transition: transform 0.3s;
 }
 
@@ -37,33 +38,56 @@ body {
     transform: rotate(-5deg) scale(1.05);
 }
 
-h1 {
-    color: #4682b4; /* Steel Blue für den Namen */
+.name {
+    color: #87cefa; /* Steel Blue für den Namen */
     transition: color 0.3s;
+    text-decoration: none; /* Kein Unterstrich */
+    font-size: 36px; /* Größere Schrift für den Namen */
+    display: block;
+    margin-top: 10px;
 }
 
-h1:hover {
+.name:hover {
     color: #5f9ea0; /* Desaturated Blue beim Hover */
 }
 
-h2 {
-    color: #6495ed; /* Cornflower Blue für den Untertitel */
+.github {
+    color: #6495ed; /* Cornflower Blue für den GitHub-Link */
+    text-decoration: none; /* Kein Unterstrich */
+    font-size: 24px;
+    margin-top: 5px;
+    display: block;
+}
+
+.github:hover {
+    color: #5f9ea0; /* Vivid Sky Blue beim Hover */
 }
 
 p {
-    color: #ddd; /* Helles Grau für den Text */
+    color: #EFEFEF; /* Helles Grau für den Text */
+    margin: 5px 0;
 }
 
 .highlight {
-    color: #00bfff; /* Vivid Sky Blue für Highlights */
+    color: #87cefa; /* Vivid Sky Blue für Highlights */
     font-weight: bold;
 }
 
 .highlight span {
-    color: #4682b4; /* Steel Blue für die Labels */
+    color: #87cefa; /* Steel Blue für die Labels */
     font-weight: normal;
 }
 
 p, li {
-    color: #bbb; /* Etwas heller für den allgemeinen Text */
+    color: #EFEFEF; /* Etwas heller für den allgemeinen Text */
+}
+
+strong {
+    font-weight: bold;
+    font-size: 22px; /* Größere Schrift für die Titel */
+}
+
+em {
+    font-style: italic;
+    font-size: 18px; /* Kursiv für den Hobbytext */
 }
