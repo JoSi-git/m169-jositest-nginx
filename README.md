@@ -35,42 +35,6 @@ EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-
-## Beispielseite (`index.html`)
-Speichere diese Datei unter `site-content/index.html`.
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Meine Webseite</title>
-</head>
-<body>
-    <h1>Willkommen auf meiner Webseite!</h1>
-    <p>Diese Webseite läuft in einem Docker-Container mit NGINX.</p>
-    <p>JoSi 2025.</p>
-</body>
-</html>
-```
-
-
-## Beispiel CSS-Datei (`styles.css`)
-Speichere diese Datei unter `site-content/styles.css`.
-```css
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-}
-
-h1 {
-    color: #333;
-}
-```
-
-
 ## Container bauen und starten
 1. Erstelle die benötigten Ordner:
 
