@@ -50,7 +50,7 @@ docker build -t jositest-nginx .
 
 4. Starte den Container:
 ```bash
-docker run -d -p 9443:80 \
+docker run -d -p 8080:80 \
   -v $(pwd)/site-content:/usr/share/nginx/html \
   -v $(pwd)/logs:/var/log/nginx \
   --name jositest-nginx jositest-nginx
