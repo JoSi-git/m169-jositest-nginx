@@ -40,7 +40,7 @@ CMD ["nginx", "-g", "daemon off;"]
 1. Erstelle die benötigten Ordner:
 
 ```
-git clone https://github.com/JoSi-git/m169.git
+git clone https://github.com/JoSi-git/m169-jositest-nginx.git
 ```
 
 3. Wechsle in den Projektordner und baue das Docker-Image:
